@@ -1,0 +1,89 @@
+body{ /* Kullanıcının gördüğü ana ekranda bulunan arkaplan dahil tüm nesnelerin ortalandığı düzenlendiği kısım */
+    background-image: url('img/bg.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    position: relative;
+    margin:0 auto;
+    text-align:center; 
+    width:960px;
+}
+button{ /* Butonların şekillendiği kısım biraz ctrl+c ctrl+v kullanmış olabilirim (yalan yok)*/
+    --b: 1.5px;   /* kenarlık kalınlığı */
+    --s: .30em; /* köşe boyutu */
+    --color: #970a0a;
+    background-color: rgba(255, 255, 255, 0.61);
+    
+    padding: calc(.3em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    font-weight: bold;
+}
+button:hover,
+button:focus-visible{
+    background-color: rgba(255, 255, 255, 0.61);
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+button:active {
+    background-color: rgba(255, 255, 255, 0.61);
+    background: var(--color);
+    color: #fff;
+}
+input{ /* Oyuncu isimlerinin ve Karakterlerin yazılacağı alanların düzenlemesi */
+    background-color: #970a0ace;
+    color: #ffffff;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+textarea{ /* Operatörün notlarını tutacağı yazı(input) kısmının düzenlemeleri */
+    background-color: #970a0ace;
+    color: white;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+}
+ul{
+    padding: 20px;
+    position: relative;
+    margin:0 auto;
+    text-align:center; 
+    width:center center;
+}
+.table{
+    margin:0 auto; text-align:center; width:250px;
+    font-size: 20px;
+}
+td{
+    margin:0 auto; text-align:center; width:250px;
+    background-color: #970a0ace;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 2px;
+    color : white;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
