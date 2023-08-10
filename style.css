@@ -8,7 +8,6 @@ body{ /* Kullanıcının gördüğü ana ekranda bulunan arkaplan dahil tüm nes
     position: relative;
     margin:0 auto;
     text-align:center; 
-    width:960px;
 }
 button{ /* Butonların şekillendiği kısım biraz ctrl+c ctrl+v kullanmış olabilirim (yalan yok)*/
     --b: 1.5px;   /* kenarlık kalınlığı */
@@ -86,4 +85,21 @@ p{
     font-size: 20px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
+}
+.tumKarakterlerNasilOynanir{
+    background-color: #970a0ace;
+    color: #ffffff;
+    width: 150px;
+    border-radius: 6px;
+    border-style: groove;
+    border-color: #ffffff;
+}
+.oyunhakkinda{
+    background-color: #ffffffce;
+    color: #000000;
+    width: 275px;
+    border-radius: 6px;
+    border-style: groove;
+    border-color: #ffffff;
+    font-weight: bold;
 }
